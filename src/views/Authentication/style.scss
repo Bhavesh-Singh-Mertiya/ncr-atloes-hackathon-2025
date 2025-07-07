@@ -1,0 +1,125 @@
+@import "../../assets/scss/variables";
+
+
+/* Login */
+.adminlogin {
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 106px;
+
+	@include below-md() {
+		padding-top: 50px;
+	}
+
+
+	&::before {
+		content: '';
+		opacity: 0.9;
+		background: linear-gradient(#a64697 0%, #f15c60 100%);
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+
+	}
+
+	.innerbox {
+		padding: 32px 30px 37px 30px;
+		border-radius: 8px;
+
+		@include below-md() {
+			padding: 30px 20px;
+		}
+
+		.btn-primary {
+			min-width: 90px;
+		}
+
+
+		.cptimg {
+			width: 16px;
+			height: 16px;
+		}
+
+
+		.form-check-input {
+			width: 22px;
+			height: 22px;
+		}
+
+		.form-group {
+			.formicon {
+
+				margin-right: 14px;
+				margin-top: 25px;
+
+				svg {
+					color: var(--color-default-400);
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+
+	}
+}
+
+/* Login */
+
+
+.adminlogin {
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 106px;
+}
+
+@media only screen and (max-width: 767px) {
+	.adminlogin {
+		padding-top: 50px;
+	}
+}
+
+.adminlogin::before {
+	content: '';
+	opacity: 0.9;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a64697), to(#f15c60));
+	background: linear-gradient(#a64697 0%, #f15c60 100%);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.adminlogin .innerbox {
+	padding: 30px;
+	border-radius: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+	.adminlogin .innerbox {
+		padding: 30px 20px;
+	}
+}
+
+.adminlogin .innerbox .btn-primary {
+	min-width: 90px;
+}
+
+.adminlogin .innerbox .form-check-input {
+	width: 22px;
+	height: 22px;
+}
+
+.adminlogin .innerbox .form-group .formicon {
+	margin-right: 14px;
+}
+
+.adminlogin .innerbox .form-group .formicon svg {
+	color: var(--color-default-400);
+	width: 14px;
+	height: 14px;
+}

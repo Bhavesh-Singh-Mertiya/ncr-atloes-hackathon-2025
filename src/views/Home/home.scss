@@ -1,0 +1,35 @@
+.content-header h1{
+    font-size: 22px;
+    
+}
+.card{
+    padding: 23px 30px 23px 20px;
+    margin-bottom: 25px;
+    &.purple-bg{
+        background: #7C81D4;
+    }
+    &.lightgreen-bg{
+        background: #5FBF8F;
+    }
+    &.teal-bg{
+        background: #5FA2BF;
+    }
+    &.red-bg{
+        background: #D47C72;
+    }
+    &.cyan-bg{
+        background: #72CDD4;
+    }
+    &.yellow-bg{
+        background: #D4C072;
+    }
+    h2{font-size: 30px;}
+}
+.content-wrapper{
+    min-height: calc(100vh - 60px) !important;
+    background: #F2F2F2;
+}
+.whitecard{
+    padding: 17px 20px 30px 13px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,47 @@
+.main-sidebar {
+    background-color: var(--color-default);
+    .brand-link {
+        border-bottom-color: #5c5c5c;
+        min-height: 60px;
+        img {
+            padding: 1px 0;
+        }
+    }
+    .sidebar {
+        nav {
+            .nav {
+                --bs-nav-link-padding-x: 22px;
+                --navbarMinHeight: 46px;
+                li {
+                    &.nav-header {
+                        padding-left: var(--bs-nav-link-padding-x);
+                        padding-right: var(--bs-nav-link-padding-x);
+                        min-height: var(--navbarMinHeight);
+                    }
+                    .nav-link {
+                        min-height: var(--navbarMinHeight);
+                        .nav-icon {
+                            width: 32px;
+                        }
+                        .treeMenuArrow {
+                            svg {
+                                width: 12px;
+                                height: 7px;
+                            }
+                        }
+                        &.active {
+                            background-color: var(--color-primary);
+                        }
+                        &[aria-expanded="true"] {
+                            background-color: rgba(241, 92, 96, .10);
+                            .treeMenuArrow {
+                                transform: rotate(-180deg);
+                                transform-origin: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

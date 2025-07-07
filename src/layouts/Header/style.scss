@@ -1,0 +1,29 @@
+@import "../../assets/scss/variables";
+
+.main-header {
+    &.navbar-dark {
+        background-color: var(--color-secondary);
+        border-color: var(--color-secondary);
+    }
+
+    min-height: 60px;
+
+    ul {
+        li {
+            .userImg {
+                @include below-lg() {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            .dropdown-toggle {
+                &::after {
+                    border-top: 0.4em solid;
+                    border-right: 0.325em solid transparent;
+                    border-left: 0.325em solid transparent;
+                }
+            }
+        }
+    }
+}

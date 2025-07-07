@@ -1,0 +1,94 @@
+//Responsive Mixins
+$below-xsm: 374px;
+$below-sm: 575px;
+$below-md: 767px;
+$below-lg: 991px;
+$below-xl: 1199px;
+$below-xxl: 1399px;
+
+$above-sm: 576px;
+$above-md: 768px;
+$above-lg: 992px;
+$above-xl: 1200px;
+$above-1300: 1300px;
+$above-xxl: 1400px;
+
+@mixin below-xsm {
+  @media only screen and (max-width: $below-xsm) {
+    @content;
+  }
+}
+
+@mixin below-sm {
+  @media only screen and (max-width: $below-sm) {
+    @content;
+  }
+}
+
+@mixin below-md {
+  @media only screen and (max-width: $below-md) {
+    @content;
+  }
+}
+
+@mixin below-lg {
+  @media only screen and (max-width: $below-lg) {
+    @content;
+  }
+}
+
+@mixin below-xl {
+  @media only screen and (max-width: $below-xl) {
+    @content;
+  }
+}
+
+@mixin below-xxl {
+  @media only screen and (max-width: $below-xxl) {
+    @content;
+  }
+}
+
+@mixin above-sm {
+  @media only screen and (min-width: $above-sm) {
+    @content;
+  }
+}
+
+@mixin above-md {
+  @media only screen and (min-width: $above-md) {
+    @content;
+  }
+}
+
+@mixin above-lg {
+  @media only screen and (min-width: $above-lg) {
+    @content;
+  }
+}
+
+@mixin above-xl {
+  @media only screen and (min-width: $above-xl) {
+    @content;
+  }
+}
+
+@mixin above-1300 {
+  @media only screen and (min-width: $above-1300) {
+    @content;
+  }
+}
+
+@mixin above-xxl {
+  @media only screen and (min-width: $above-xxl) {
+    @content;
+  }
+}
+
+@mixin above-and-below-xxl {
+  @media screen and (max-width: $below-xxl) and (min-width: $above-xl) {
+    @content;
+  }
+}
+
+//End of Responsive Mixins
